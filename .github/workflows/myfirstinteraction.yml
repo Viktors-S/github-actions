@@ -12,7 +12,8 @@ jobs:
     
 
   mysecond_job:
-    runs-on: surname
+    needs: myfirstjob
+    runs-on: ubuntu-latest
     environment: test
     steps:
     - name: Print surname
