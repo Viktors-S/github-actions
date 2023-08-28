@@ -11,7 +11,7 @@ jobs:
       run: echo "Hello, ${{vars.MY_NAME}}"
     
 
-  mysecond_job:
+  surname:
     needs: myfirstjob
     runs-on: ubuntu-latest
     environment: test
