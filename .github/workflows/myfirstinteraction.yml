@@ -9,5 +9,13 @@ jobs:
       run: echo "HELLO"
     - name: Print name
       run: echo "Hello, ${{vars.MY_NAME}}"
+    
+
+  mysecond_job:
+    runs-on: surname
+    environment: test
+    steps:
     - name: Print surname
       run: echo "Surname - ${{secrets.MY_SURNAME}}" | sed 's/./& /g'
+    
+
